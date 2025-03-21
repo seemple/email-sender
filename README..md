@@ -25,6 +25,25 @@ The **Email Sender Service** is a simple web service built with Node.js and Expr
 
   
 
+
+## Project Structure
+
+```
+email-service
+├── src
+│   ├── app.ts               # Entry point of the application
+│   ├── services
+│   │   └── emailService.ts  # Service for sending emails
+│   ├── routes
+│   │   └── emailRoutes.ts    # Routes for email-related operations
+│   └── types
+│       └── index.ts         # Type definitions
+├── package.json             # NPM package configuration
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
+```
+
+
 ### Requirements
 
 - **Node.js** (v18 or higher)
