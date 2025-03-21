@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  email-sender:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: email-sender # Name the image as "email-sender"
+    container_name: email-sender
+    ports:
+      - "3002:3002" # Map container port 3002 to host port 3002
+    env_file:
+      - .env # Load environment variables from the .env file
+    networks:
+      - tbcargo
+    volumes:
+      - .:/app # Mount the current directory to the container for development
+
+networks:
+  tbcargo:
+    external: true

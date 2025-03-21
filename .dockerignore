@@ -1,0 +1,22 @@
+# Node.js dependencies (will be installed in the container)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Local build output
+dist/
+build/
+
+# Git files
+.git/
+.gitignore
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.swp
