@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: email-sender # Name the image as "email-sender"
     container_name: email-sender
     ports:
       - "3002:3002" # Map container port 3002 to host port 3002
